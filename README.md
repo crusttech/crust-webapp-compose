@@ -1,4 +1,4 @@
-# Crust Unify webapp
+# Crust Compose webapp
 
 ## Project setup
 

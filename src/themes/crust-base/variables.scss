@@ -1,0 +1,112 @@
+// @todo remove the need to implicitly import variables into each and every component
+//       Until then, we need variables defined here
+
+$wideminwidth:767px !default;
+$confortableminwidth:1020px !default;
+
+$logo: '/img/logo.png' !default;
+
+// Paths
+$fonts_dir : '~corteza-webapp-compose/src/themes/corteza-base/fonts/' !default;
+
+// Typography
+$regular: 'nunito_sansregular' !default;
+$bold: 'nunito_sansbold' !default;
+$semibold: 'nunito_sanssemibold' !default;
+$font-size-base: 0.85rem !default;
+
+$font-family-base:      $regular !default;
+$headings-font-family:  $semibold !default;
+
+// Color system
+$white:         #fff !default;
+$black:         #000 !default;
+$primary:       #1397CB !default;
+$secondary:     #90A3B1 !default;
+$success:       #2FBC95 !default;
+$warning:       #FFCC32 !default;
+$danger:        #E85568 !default;
+$light:         #F3F3F5 !default;
+$dark:          #1e2224 !default;
+
+// Options
+$enable-rounded: false !default;
+
+// Components
+$border-radius: 0 !default;
+
+// Body
+$body-bg: $light !default;
+
+// Tables
+$table-cell-padding: 0.5rem !default;
+$table-cell-padding-sm: 0.25rem !default;
+
+$table-border-width: 0 !default;
+
+// Buttons
+$btn-font-size: $font-size-base !default;
+$btn-padding-y: 0.25em !default;
+$btn-padding-x: 1em !default;
+$btn-focus-width: 0 !default;
+$btn-focus-box-shadow: none !default;
+$btn-active-box-shadow: none !default;
+
+// Navbar
+$navbar-bg:             $white !default;
+$navbar-color:          $black !default;
+$navbar-border:         $primary !default;
+$navbar-active-bg:      $white !default;
+$navbar-active-color:   $primary !default;
+$navbar-active-border:  $primary !default;
+$navbar-hover-bg:       $white !default;
+$navbar-hover-color:    $primary !default;
+$navbar-hover-border:   $primary !default;
+$navbar-height:         50px !default;
+$navbar-padding-y:      0 !default;
+$navbar-padding-x:      0 !default;
+
+$navbar-toggler-font-size:  24px !default;
+
+$sidebar-width:         250px !default;
+$sidebar-height:        calc(100vh - #{$navbar-height}) !default;
+
+// Forms
+$input-font-size: $font-size-base !default;
+
+//forms
+$input-btn-focus-width:        0 !default;
+$input-focus-box-shadow:       none !default;
+$input-focus-border-color:     $primary !default;
+
+// messages
+$errorbkgcolor:#E85568 !default;
+$errortxtcolor:#fff !default;
+
+//tabs
+//background-tab
+$tab_bgcolor             : #e8eae9 !default;
+$tab_hoverbg             : #1E2224 !default;
+$tab_hovercolor          : #fff !default;
+
+//current tab
+$curtab_topbordercolor   : #FFCC32 !default;
+$curtab_bgcolor          : #fff !default;
+
+//footer
+$footerbgcolor    : #fff !default;
+
+//items :
+$notificationcolor : #E85568 !default;
+$projectbgcolor    : #1397CB !default;
+$projecttxtcolor   : #fff !default;
+$tabbgcolor        : #1E2224 !default;
+
+$tabtitletxtcolor  : #FFCC32 !default;
+$tabitemtxtcolor   : #fff !default;
+$tabcurrentbgcolor : #1397CB !default;
+
+$messagebgcolor          : #fff !default;
+$currentmessagebgcolor   : $tabcurrentbgcolor !default;
+$currentmessagetxtcolor  : #fff !default;
+$currentmymessagebgcolor : lighten(rgba($primary, 1), 40%) !default;
