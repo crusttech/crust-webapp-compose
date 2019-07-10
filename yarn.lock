@@ -3010,9 +3010,9 @@ corteza-webapp-common@cortezaproject/corteza-webapp-common.git#master:
     mime-types "^2.1.24"
     pdfjs-dist "^2.0.943"
 
-corteza-webapp-compose@cortezaproject/corteza-webapp-compose.git#importable:
+corteza-webapp-compose@cortezaproject/corteza-webapp-compose.git#master:
   version "2019.6.0"
-  resolved "https://codeload.github.com/cortezaproject/corteza-webapp-compose/tar.gz/f10c736d2f793466aec2603420ae2540c5887f20"
+  resolved "https://codeload.github.com/cortezaproject/corteza-webapp-compose/tar.gz/0a1008dcf4f67fe01b34093b92af9a8c97c4f8e9"
   dependencies:
     "@fortawesome/fontawesome-svg-core" "1.2.19"
     "@fortawesome/free-regular-svg-icons" "5.9.0"

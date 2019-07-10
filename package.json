@@ -39,7 +39,7 @@
     "c3": "^0.6.11",
     "chart.js": "^2.7.3",
     "corteza-webapp-common": "cortezaproject/corteza-webapp-common.git#master",
-    "corteza-webapp-compose": "cortezaproject/corteza-webapp-compose.git#importable",
+    "corteza-webapp-compose": "cortezaproject/corteza-webapp-compose.git#master",
     "ejs": "2.6.2",
     "file-saver": "^2.0.2",
     "i": "^0.3.6",
