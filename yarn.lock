@@ -3108,7 +3108,7 @@ corteza-webapp-common@cortezaproject/corteza-webapp-common.git#master:
 
 corteza-webapp-compose@cortezaproject/corteza-webapp-compose.git#master:
   version "2019.6.0"
-  resolved "https://codeload.github.com/cortezaproject/corteza-webapp-compose/tar.gz/dcf8930f31f34e41854e6d60a0d693b1557b7af6"
+  resolved "https://codeload.github.com/cortezaproject/corteza-webapp-compose/tar.gz/c2184ed7cd4f2d7cb63dad604957a9bfc346df74"
   dependencies:
     "@fortawesome/fontawesome-svg-core" "1.2.21"
     "@fortawesome/free-regular-svg-icons" "5.10.1"
