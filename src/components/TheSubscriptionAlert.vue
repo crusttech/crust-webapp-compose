@@ -1,5 +1,5 @@
 <template>
-  <b-navbar v-show="!valid" class="bg-danger alert mb-0 p-3 shadow-sm text-white">
+  <b-navbar v-if="!valid" class="bg-danger alert mb-0 p-3 shadow-sm text-white">
     <div v-html="decorate(status)"></div>
   </b-navbar>
 </template>
