@@ -704,9 +704,9 @@
     "@fortawesome/fontawesome-common-types" "^0.2.21"
 
 "@fortawesome/vue-fontawesome@^0.1.2":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-0.1.7.tgz#121867297cafd141af78c67d92ab9f1ad4b7328b"
-  integrity sha512-YCw2Q2m4fxzyFsPOH3uDYMoJztTD+pT+AAyse4LFpbdrBg+r8ueaVT8BFnXEjrGwMDJJeXrwJ5AOC6q/JWBI4w==
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-0.1.8.tgz#615347c56d285eb634315f59fe4f4156e4eee8b4"
+  integrity sha512-SdFiUD+vFDA/xKuEbnQTVrK8FDxoV0eyQaiHxmCcjAc0+vQe0Kf6oGm28opNPIt8MTgKWR3+Yg3xXP455Ae4tQ==
 
 "@fullcalendar/bootstrap@^4.3.0":
   version "4.3.0"
@@ -2476,9 +2476,9 @@ chardet@^0.4.0:
   integrity sha1-tUc7M9yXxCTl2Y3IfVXU2KKci/I=
 
 chart.js@^2.7.3:
-  version "2.9.1"
-  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-2.9.1.tgz#e98893a810d40d1c0a016e6872a13fa5faedcdf8"
-  integrity sha512-DA5dFt0Bz79oz56ezmrwmZqj0hXGs+i9VbCFOcHqbwrHIGv7RI4YqninJKNIAC0qa29WBI9qYTN7LzULlOeunA==
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-2.9.2.tgz#5f7397f2fc33ca406836dbaed3cc39943bbb9f80"
+  integrity sha512-AagP9h27gU7hhx8F64BOFpNZGV0R1Pz1nhsi0M1+KLhtniX6ElqLl0z0obKSiuGMl9tcRe6ZhruCGCJWmH6snQ==
   dependencies:
     chartjs-color "^2.1.0"
     moment "^2.10.2"
@@ -3010,8 +3010,8 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
 corteza-webapp-common@cortezaproject/corteza-webapp-common.git#master:
-  version "2019.9.0-rc.42"
-  resolved "https://codeload.github.com/cortezaproject/corteza-webapp-common/tar.gz/c2cb710f40cf1ecaea4b6a2bb53885b1025c1ffd"
+  version "2019.9.0-rc.44"
+  resolved "https://codeload.github.com/cortezaproject/corteza-webapp-common/tar.gz/f6c84a8164944ee629565ec395eadac58c1a1360"
   dependencies:
     diff "4.0.1"
     mime-types "2.1.24"
@@ -3022,7 +3022,7 @@ corteza-webapp-common@cortezaproject/corteza-webapp-common.git#master:
 
 corteza-webapp-compose@cortezaproject/corteza-webapp-compose.git#master:
   version "2019.9.0-rc.1"
-  resolved "https://codeload.github.com/cortezaproject/corteza-webapp-compose/tar.gz/0ee2abb70d4b229ac015d698ce759f2d4fb6c49a"
+  resolved "https://codeload.github.com/cortezaproject/corteza-webapp-compose/tar.gz/a172bf2116565afbb208fac6885c20b5f86cb3a1"
   dependencies:
     "@fortawesome/fontawesome-svg-core" "1.2.21"
     "@fortawesome/free-regular-svg-icons" "5.10.1"
@@ -4106,7 +4106,7 @@ electron-to-chromium@^1.3.295:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.296.tgz#a1d4322d742317945285d3ba88966561b67f3ac8"
   integrity sha512-s5hv+TSJSVRsxH190De66YHb50pBGTweT9XGWYu/LMR20KX6TsjFzObo36CjVAzM+PUeeKSBRtm/mISlCzeojQ==
 
-element-resize-detector@^1.1.10:
+element-resize-detector@^1.1.15:
   version "1.1.15"
   resolved "https://registry.yarnpkg.com/element-resize-detector/-/element-resize-detector-1.1.15.tgz#48eba1a2eaa26969a4c998d972171128c971d8d2"
   integrity sha512-16/5avDegXlUxytGgaumhjyQoM6hpp5j3+L79sYq5hlXfTNRy5WMMuTVWkZU3egp/CokCmTmvf18P3KeB57Iog==
@@ -5874,7 +5874,7 @@ inquirer@^3.0.6:
     strip-ansi "^4.0.0"
     through "^2.3.6"
 
-interactjs@^1.5.3:
+interactjs@^1.6.3:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/interactjs/-/interactjs-1.6.3.tgz#2187bf454a9477c39046001d6fa7fd09eafdf458"
   integrity sha512-mGivT1/VtTrjrSyhA1ezNGa0njNsZgXSoTjbCcr4qTJzRnUM5Rs+CF9+zOWOlwTZ89PAoT9FlTTqODC3xo5FEA==
@@ -8350,9 +8350,9 @@ package-json@^4.0.0:
     semver "^5.1.0"
 
 pacote@^9.1.0, pacote@^9.5.3, pacote@^9.5.4:
-  version "9.5.8"
-  resolved "https://registry.yarnpkg.com/pacote/-/pacote-9.5.8.tgz#23480efdc4fa74515855c9ecf39cf64078f99786"
-  integrity sha512-0Tl8Oi/K0Lo4MZmH0/6IsT3gpGf9eEAznLXEQPKgPq7FscnbUOyopnVpwXlnQdIbCUaojWy1Wd7VMyqfVsRrIw==
+  version "9.5.9"
+  resolved "https://registry.yarnpkg.com/pacote/-/pacote-9.5.9.tgz#fa3a08629c9390b2b99769c55b2cc137e1a24df3"
+  integrity sha512-S1nYW9ly+3btn3VmwRAk2LG3TEh8mkrFdY+psbnHSk8oPODbZ28uG0Z0d3yI0EpqcpLR6BukoVRf3H4IbGCkPQ==
   dependencies:
     bluebird "^3.5.3"
     cacache "^12.0.2"
@@ -11679,12 +11679,12 @@ vue-functional-data-merge@^3.1.0:
   integrity sha512-leT4kdJVQyeZNY1kmnS1xiUlQ9z1B/kdBFCILIjYYQDqZgLqCLa0UhjSSeRX6c3mUe6U5qYeM8LrEqkHJ1B4LA==
 
 vue-grid-layout@^2.3.3:
-  version "2.3.6"
-  resolved "https://registry.yarnpkg.com/vue-grid-layout/-/vue-grid-layout-2.3.6.tgz#0190176f32af006f215b25caf08a2fc986c8921e"
-  integrity sha512-pKiSJmla7aHGKqI/t4nrehfoJgHdmanEbdR6TQU59m0JP1Md6YZtaQNUq7mRLspd6+1WULOLOQDraU5nF90j0Q==
+  version "2.3.7"
+  resolved "https://registry.yarnpkg.com/vue-grid-layout/-/vue-grid-layout-2.3.7.tgz#d148f013ef2ca9dc1cb5d5298e7966aa50f54431"
+  integrity sha512-q3FMiuog0hPsK/IUKtlg2A/lwPo86YlLaX9+wEiCTjUU++GabM2o9hDhRVruDJZLUah55iTg8LRttBxrxPv0WQ==
   dependencies:
-    element-resize-detector "^1.1.10"
-    interactjs "^1.5.3"
+    element-resize-detector "^1.1.15"
+    interactjs "^1.6.3"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
