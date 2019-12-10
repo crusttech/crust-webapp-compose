@@ -12,7 +12,7 @@
     "build": "vue-cli-service build --mode production",
     "lint": "vue-cli-service lint && stylelint '**/*.{vue,scss}' --fix",
     "test:unit": "vue-cli-service test:unit",
-    "cdeps": "yarn upgrade corteza-webapp-common corteza-webapp-compose"
+    "cdeps": "yarn upgrade corteza-webapp-compose"
   },
   "gitHooks": {
     "pre-commit": "yarn lint"
@@ -30,26 +30,38 @@
     }
   },
   "dependencies": {
-    "corteza-webapp-common": "cortezaproject/corteza-webapp-common.git#master",
-    "corteza-webapp-compose": "cortezaproject/corteza-webapp-compose.git#master",
-    "vue": "2.6.10"
+    "corteza-webapp-compose": "cortezaproject/corteza-webapp-compose.git#2019.12.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "3.9.2",
-    "@vue/cli-plugin-eslint": "3.9.2",
-    "@vue/cli-plugin-unit-mocha": "3.9.0",
-    "@vue/cli-service": "3.9.2",
-    "@vue/eslint-config-prettier": "^3.0.4",
-    "@vue/eslint-config-standard": "^3.0.1",
+    "@babel/core": "^7.0.0",
+    "@storybook/addon-actions": "^5.1.10",
+    "@storybook/addon-knobs": "^5.1.10",
+    "@storybook/addons": "^5.1.10",
+    "@storybook/vue": "^5.1.10",
+    "@types/lodash": "4.14.136",
+    "@vue/cli-plugin-babel": "3.10.0",
+    "@vue/cli-plugin-eslint": "3.10.0",
+    "@vue/cli-plugin-unit-mocha": "3.10.0",
+    "@vue/cli-service": "3.10.0",
+    "@vue/eslint-config-prettier": "5.0.0",
+    "@vue/eslint-config-standard": "4.0.0",
     "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-plugin-istanbul": "^5.2.0",
+    "babel-preset-vue": "^2.0.2",
     "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "core-js": "2",
     "faker": "^4.1.0",
     "node-sass": "4.12.0",
+    "nyc": "^14.1.1",
     "sass-loader": "^7.0.1",
-    "stylelint": "^9.8.0",
+    "sinon": "^7.3.2",
+    "storybook-addon-i18next": "1.2.0",
+    "storybook-vue-router": "^1.0.3",
+    "stylelint": "10.1.0",
     "stylelint-config-standard": "18.3.0",
-    "stylelint-scss": "3.9.1",
+    "stylelint-scss": "3.9.3",
     "stylelint-webpack-plugin": "^0.10.5",
-    "vue-template-compiler": "2.6.10"
+    "vue-template-compiler": "^2.5.17"
   }
 }
