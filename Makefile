@@ -1,28 +1,45 @@
-.PHONY: create docker enter install serve build test
+.PHONY: dep test build release upload
 
-create:
-	@if [ -d "src" ]; then echo "Project src folder exists"; exit 1; else echo "Creating project src folder"; fi
-	docker run --rm -it --env-file .env.local --net=host -v ${PWD}:/app -w /app crusttech/webapp-dev vue create .
-	docker run --rm -it --env-file .env.local --net=host -v ${PWD}:/app -w /app crusttech/webapp-dev yarn add axios --save
 
-docker:
-	cd docker && docker build --no-cache --rm -f Dockerfile.dev -t crusttech/webapp-dev . && cd ..
+YARN_FLAGS            ?= --non-interactive --no-progress --silent --emoji false
+YARN                   = yarn $(YARN_FLAGS)
 
-enter:
-	docker run --rm -it --env-file .env.local --net=host -v ${PWD}:/app -w /app crusttech/webapp-dev
+REPO_NAME ?= $(DRONE_REPO_NAME)
+ifeq ($(REPO_NAME),)
+REPO_NAME = crust-webapp-compose
+endif
 
-install:
-	docker run --rm -it --env-file .env.local --net=host -v ${PWD}:/app -w /app crusttech/webapp-dev yarn install
+BUILD_FLAVOUR         ?= crust
+BUILD_FLAGS           ?= --production
+BUILD_DEST_DIR         = dist
+BUILD_TIME            ?= $(shell date +%FT%T%z)
+BUILD_VERSION         ?= $(shell git describe --tags --abbrev=0)
 
-serve:
-	docker run --rm -it --env-file .env.local --net=host -v ${PWD}:/app -w /app crusttech/webapp-dev yarn serve
+BUILD_NAME             = $(REPO_NAME)-$(BUILD_VERSION)
 
-build:
-	docker run --rm -it --env-file .env.local --net=host -v ${PWD}:/app -w /app crusttech/webapp-dev yarn build
+RELEASE_NAME           = $(BUILD_NAME).tar.gz
+RELEASE_EXTRA_FILES   ?= README.md LICENSE CONTRIBUTING.md DCO
+RELEASE_PKEY          ?= .upload-rsa
 
-lint:
-	docker run --rm -it --env-file .env.local --net=host -v ${PWD}:/app -w /app crusttech/webapp-dev yarn lint
+dep:
+	$(YARN) install
 
 test:
-	docker run --rm -it --env-file .env.local --net=host -v ${PWD}:/app -w /app crusttech/webapp-dev yarn test:unit
+	$(YARN) lint
+	$(YARN) test:unit
 
+build:
+	$(YARN) build $(BUILD_FLAGS)
+
+release:
+	@ echo $(RELEASE_NAME)
+	@ cp $(RELEASE_EXTRA_FILES) $(BUILD_DEST_DIR)
+	@ tar -C $(BUILD_DEST_DIR) -czf $(RELEASE_NAME) $(dir $(BUILD_DEST_DIR))
+
+upload: $(RELEASE_PKEY)
+	@ echo "put *.tar.gz" | sftp -q -i $(RELEASE_PKEY) $(RELEASE_SFTP_URI)
+	@ rm -f $(RELEASE_PKEY)
+
+$(RELEASE_PKEY):
+	@ echo $(RELEASE_SFTP_KEY) | base64 -d > $(RELEASE_PKEY)
+	@ chmod 0400 $@
